@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Halaman Bantuan</title>
+    <link rel="icon" href="/img/cuaca.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/app.js" defer></script>
+</head>
+<body>
+    {{> header}}
+
+```
+<div class="main-content">
+    <h1>Halaman Bantuan</h1>
+    <p>Berikut adalah beberapa pertanyaan yang sering diajukan:</p>
+
+    <h3>a. Halaman ini digunakan untuk apa?</h3>
+    <p>Halaman ini digunakan untuk menampilkan informasi bantuan mengenai penggunaan aplikasi cek cuaca.</p>
+
+    <h3>b. Apa itu API?</h3>
+    <p>API (Application Programming Interface) adalah antarmuka yang memungkinkan aplikasi saling berkomunikasi dan bertukar data.</p>
+
+    <h3>c. API apa yang digunakan dalam aplikasi ini?</h3>
+    <p>Aplikasi ini menggunakan API buatan sendiri yang menyediakan data prakiraan cuaca secara dinamis melalui endpoint JSON seperti <code>/infoCuaca</code>.</p>
+
+    <h3>d. Jelaskan salah satu arsitektur API!</h3>
+    <p>Salah satu arsitektur API adalah <strong>RESTful API</strong>, yang menggunakan metode HTTP (GET, POST, PUT, DELETE) untuk berinteraksi dengan data.</p>
+
+    <h3>e. Contoh API Publik</h3>
+    <p>Salah satu API publik adalah <a href="https://mediastack.com/" target="_blank">Mediastack</a>, yang menyediakan data berita dan informasi global secara real-time.</p>
+</div>
+
+{{> footer}}
+```
+
+</body>
+</html>

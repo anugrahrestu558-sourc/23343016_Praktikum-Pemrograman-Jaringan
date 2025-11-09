@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{judul}}</title>
+    <link rel="icon" href="/img/cuaca.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/app.js"></script>
+</head>
+<body>
+    {{> header}}
+    
+    <div class="main-content tentang-container">
+        <img src="/img/Profil.jpeg" alt="Foto Profil" class="profil">
+        <div class="tentang-info">
+            <h2>Tentang Saya</h2>
+            <p>Halo! Nama saya <strong>{{nama}}</strong>. Saya berasal dari <strong>Padang Pariaman</strong>, dan biasa dipanggil <strong>Restu</strong> atau <strong>Tutu</strong>.</p>
+            <p>Saya sangat menyukai hal-hal yang berhubungan dengan <em>public speaking</em> dan pengembangan diri. Saya percaya bahwa komunikasi yang baik adalah kunci untuk membangun hubungan yang kuat dan karier yang sukses.</p>
+        </div>
+    </div>
+
+    {{> footer}}
+</body>
+</html>
