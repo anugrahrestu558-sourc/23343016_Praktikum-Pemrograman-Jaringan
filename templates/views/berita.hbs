@@ -1,30 +1,31 @@
 <!DOCTYPE html>
-
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <title>Berita Terbaru</title>
-    <link rel="icon" href="/img/cuaca.png">
-    <link rel="stylesheet" href="/css/styles.css">
+  <meta charset="UTF-8">
+  <title>{{judul}}</title>
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    {{> header}}
 
-```
+{{> header}}
+
 <div class="main-content">
-    <h1>Berita Terbaru</h1>
-    <p>Berikut beberapa berita seputar cuaca dan aktivitas kampus:</p>
+  <h1>{{judul}}</h1>
 
+  {{#if daftarBerita.length}}
     {{#each daftarBerita}}
-        <div class="berita-item" style="margin-bottom:20px;">
-            <h3 style="color:#2b6cb0;">{{judul}}</h3>
-            <p>{{isi}}</p>
-        </div>
+      <div class="card">
+        <h3>{{title}}</h3>
+        <p>{{description}}</p>
+        <a href="{{url}}" target="_blank">Baca selengkapnya</a>
+      </div>
     {{/each}}
+  {{else}}
+    <p>Tidak ada data berita.</p>
+  {{/if}}
 </div>
 
 {{> footer}}
-```
 
 </body>
 </html>
