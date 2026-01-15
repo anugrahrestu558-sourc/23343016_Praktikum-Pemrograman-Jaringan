@@ -1,0 +1,11 @@
+Database: 
+
+Connection String:
+mongodb+srv://agusmiaintansari:Parkchanyeol61@barberflow-cluster.4bxftut.mongodb.net/
+Username: agusmiaintansari
+Password: Parkchanyeol61
+Database: barberflow
+
+Link GitHub:https://github.com/agusmiaintan-bot/BARBERFLOW 
+
+
